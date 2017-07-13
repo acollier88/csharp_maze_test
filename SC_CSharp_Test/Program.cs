@@ -101,8 +101,8 @@ namespace SC_CSharp_Test
                     }
                     else if (visited.Contains(location))
                     {
-                        
-                        Console.Write(((h*maze.width)+w).ToString().PadLeft(4, '0'));
+
+                        Console.Write(((h * maze.width) + w).ToString().PadLeft(4, '0'));
                     }
                     else
                     {
@@ -196,7 +196,7 @@ namespace SC_CSharp_Test
                 int x = start.x;
                 int y = start.y;
 
-                visited.Add(new Tuple<int, int>(y,x));
+                visited.Add(new Tuple<int, int>(y, x));
                 tryCells.Enqueue(start);
 
                 //Used modified version of Breadth First Search, as mazes tend 
