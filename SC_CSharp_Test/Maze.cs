@@ -38,42 +38,42 @@ namespace SC_CSharp_Test
 			};
 		}
 
-		public int GetCellData(int coord_x, int coord_y)
+		public int GetCellData(int coordX, int coordY)
 		{
-			if (coord_x > this.width || coord_x < 0)
+			if (coordX > this.width || coordX < 0)
 			{
 				string error = String.Format("Invalid X Coord {0} is not in the range 0 to {1}",
-							 coord_x, this.width);
+							 coordX, this.width);
 			
-				throw new System.ArgumentException(error, nameof(coord_x));
+				throw new System.ArgumentException(error, nameof(coordX));
 			}
-			if (coord_y > this.height || coord_y < 0)
+			if (coordY > this.height || coordY < 0)
 			{
 				string error = String.Format("Invalid Y Coord {0} is not in the range 0 to {1}",
-							 coord_x, this.height);
-				throw new System.ArgumentException(error, nameof(coord_y));
+							 coordX, this.height);
+				throw new System.ArgumentException(error, nameof(coordY));
 			}
 
-			return this.gridData[coord_y,coord_x];
+			return this.gridData[coordY,coordX];
 
 		}
 
-		public Dictionary<string, int> CellToDict(int coord_y, int coord_x)
+		public Dictionary<string, int> CellToDict(int coordY, int coordX)
 		{
-			if (coord_x > this.width || coord_x < 0)
+			if (coordX > this.width || coordX < 0)
 			{
 				string error = String.Format("Invalid X Coord {0} is not in the range 0 to {1}",
-							 coord_x, this.width);
+							 coordX, this.width);
 			
-				throw new System.ArgumentException(error, nameof(coord_x));
+				throw new System.ArgumentException(error, nameof(coordX));
 			}
-			if (coord_y > this.height || coord_y < 0)
+			if (coordY > this.height || coordY < 0)
 			{
 				string error = String.Format("Invalid Y Coord {0} is not in the range 0 to {1}",
-							 coord_x, this.height);
-				throw new System.ArgumentException(error, nameof(coord_y));
+							 coordX, this.height);
+				throw new System.ArgumentException(error, nameof(coordY));
 			}
-            int cell = this.gridData[coord_y, coord_x ];
+            int cell = this.gridData[coordY, coordX ];
 
 			return new Dictionary<string, int>()
 			{

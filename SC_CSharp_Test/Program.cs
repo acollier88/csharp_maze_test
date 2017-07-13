@@ -58,7 +58,7 @@ namespace SC_CSharp_Test
         public List<string> PrintInstructions(MovementNode node,
                                               Dictionary<string,
                                               MovementNode> graph,
-                                              bool unit_test)
+                                              bool unitTest)
         {
             List<string> instructions = new List<string>();
             string text = node.parentMove;
@@ -72,7 +72,7 @@ namespace SC_CSharp_Test
             }
             instructions.Reverse();
             Console.Write("['");
-            if (!unit_test)
+            if (!unitTest)
             {
                 Console.Write(String.Join("','", instructions));
             }

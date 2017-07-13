@@ -34,8 +34,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="character.cs" />
-    <Compile Include="maze.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Maze.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="mazes.txt">
